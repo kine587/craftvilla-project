@@ -4,14 +4,16 @@
 }
 :root {
   --background-color: #badeff;
-  --p-text: "happy-monkey";
+  --p-text: "happy-monkey", sans-serif;
   --p-size: 16px;
   --h1-font-family: "goblin-one", sans-serif;
   --h1-size: 60px;
   --button-font: "happy-monkey", sans-serif;
   --primary-color: #b8f1ff;
   --secondary-color: #dba6ff;
+  --h2-font-family: "goblin-one", sans-serif;
 }
+/*----- Header------*/
 header {
   display: flex;
   align-items: center;
@@ -39,11 +41,14 @@ h1 {
   text-align: center;
   padding-top: 50px;
 }
-
+p {
+  font-family: var(--p-text);
+}
 body {
   background-color: var(--background-color);
   height: 100%;
 }
+/*----hero------*/
 .hero-image {
   width: 100%;
   height: auto;
@@ -70,4 +75,14 @@ body {
   border-radius: 11px;
   padding: 10px;
   font-family: var(--button-font);
+}
+/*------about------*/
+h2 {
+  font-size: var(--h2-font-family);
+}
+#section1 {
+  background-color: var(--secondary-color);
+}
+#article1 {
+  background-color: var(--primary-color);
 }
