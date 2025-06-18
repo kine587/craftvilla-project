@@ -6,15 +6,68 @@
   --background-color: #badeff;
   --p-text: "happy-monkey";
   --p-size: 16px;
-  --h1-font-family: "goblin-one";
+  --h1-font-family: "goblin-one", sans-serif;
   --h1-size: 60px;
-  --button-font: "happy-monkey";
+  --button-font: "happy-monkey", sans-serif;
   --primary-color: #b8f1ff;
   --secondary-color: #dba6ff;
 }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+button {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border: none;
+  border-radius: 11px;
+}
 nav {
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
 }
 h1 {
   font-family: var(--h1-font-family);
+  font-size: var(--h1-size);
+  text-align: center;
+  padding-top: 50px;
+}
+
+body {
+  background-color: var(--background-color);
+  height: 100%;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero {
+  position: relative;
+  width: 100%;
+}
+.hero-text {
+  position: absolute;
+  bottom: 200px;
+  left: 100px;
+  font-family: var(--h1-font-family);
+}
+.hero-button {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 11px;
+  padding: 10px;
+  font-family: var(--button-font);
 }
