@@ -2,3 +2,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --background-color: #badeff;
+  --p-text: "happy-monkey";
+  --p-size: 16px;
+  --h1-font-family: "goblin-one";
+  --h1-size: 60px;
+  --button-font: "happy-monkey";
+  --primary-color: #b8f1ff;
+  --secondary-color: #dba6ff;
+}
+nav {
+  background-color: var(--background-color);
+}
+h1 {
+  font-family: var(--h1-font-family);
+}
