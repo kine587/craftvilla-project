@@ -164,3 +164,24 @@ footer {
   display: flex;
   padding: 100px;
 }
+/*------galleri-------*/
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--h1-font-family);
+  padding-top: 20px;
+}
+.galleri {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  flex-wrap: wrap;
+}
+.galleri img {
+  width: 300px;
+  height: 300px;
+  gap: 50px;
+}
