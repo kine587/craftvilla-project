@@ -72,7 +72,7 @@ body {
 }
 /*----hero------*/
 .hero-image {
-  width: 100%;
+  width: 100svw;
   height: auto;
   display: flex;
   align-items: center;
@@ -156,4 +156,11 @@ article {
 }
 div {
   gap: 20px;
+}
+/*------footer--------*/
+footer {
+  background-color: var(--primary-color);
+  height: 200px;
+  display: flex;
+  padding: 100px;
 }
