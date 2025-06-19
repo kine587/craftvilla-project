@@ -15,10 +15,17 @@
 }
 /*----- Header------*/
 header {
+  background-color: var(--primary-color);
+}
+.my-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 30px;
   background-color: var(--primary-color);
+}
+.my-header img {
+  width: 10px;
+  height: auto;
 }
 nav ul {
   list-style: none;
@@ -32,8 +39,23 @@ button {
   border: none;
   border-radius: 11px;
 }
-nav {
+.btn {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 10px;
+  color: black;
+}
+.navbar {
   background-color: var(--primary-color);
+  position: sticky;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 20px;
 }
 h1 {
   font-family: var(--h1-font-family);
@@ -58,7 +80,7 @@ body {
 }
 .hero {
   position: relative;
-  width: 100%;
+  width: 100svw;
 }
 .hero-text {
   position: absolute;
@@ -82,7 +104,56 @@ h2 {
 }
 #section1 {
   background-color: var(--secondary-color);
+  padding: 20px;
 }
 #article1 {
   background-color: var(--primary-color);
+}
+/*---bestill nå cards-------*/
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.Mosaikk-kunst {
+  padding: 20px;
+  border-radius: 10px;
+  border-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+}
+.Mosaikk-kunst-image {
+  max-width: 50%;
+  max-height: 50%;
+}
+.Lerretsmaling {
+  padding: 20px;
+  border-radius: 10px;
+  border-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+}
+.Lerretsmaling-image {
+  max-width: 75%;
+  max-height: 75%;
+}
+.Akvarellmaling {
+  padding: 20px;
+  border-radius: 10px;
+  border-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+}
+.Akvarellmaling-image {
+  max-width: 75%;
+  max-height: 75%;
+}
+div {
+  gap: 20px;
 }
