@@ -225,3 +225,21 @@ h3 {
 .show {
   display: block;
 }
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.mosaikk-delfin,
+.lerretsmaling-natur,
+.Akvarellmaling-tre {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+.mosaikk-delfin:hover,
+.lerretsmaling-natur:hover,
+.Akvarellmaling-tre:hover {
+  transform: scale(5.5);
+}
