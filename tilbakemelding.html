@@ -4,11 +4,17 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <header>
-    <img src="./image/paint (1).png" alt="paint-suply" />
-    <h1>Craftvilla</h1>
+    <div class="header-container">
+      <img src="./image/paint (1).png" alt="paint-suply" />
+      <h1>Craftvilla</h1>
+    </div>
     <nav class="navbar">
       <ul>
         <li><a href="index.html" class="btn"> Hjem</a></li>
@@ -19,9 +25,112 @@
     </nav>
   </header>
   <body>
-    <h3>Vi vil gjerne høre fra deg!</h3>
-    <footer>
+    <div>
+      <h3>Vi vil gjerne høre fra deg!</h3>
+      <br />
+      <p>
+        Tilbakemeldingene dine hjelper oss med å gjøre workshopene våre bedre
+        for alle. Del gjerne opplevelsen din med oss!
+      </p>
+    </div>
+    <section id="section2">
+      <article id="left">
+        <h3>Tilbakemelding</h3>
+        <form action="feedback" class="feedback-form">
+          <label for="Navn">Navn</label>
+          <br />
+          <input type="text" class="field" placeholder="Navn" />
+          <br />
+          <label for="email">Email</label>
+          <br />
+          <input type="text" class="field" placeholder="email" />
+          <br />
+          <label for="tilbakemelding">Tilbakemelding</label>
+          <br />
+          <textarea
+            name="Tilbakemelding"
+            id="Tilbakemelding"
+            style="width: 200px; height: 100px"
+            placeholder="Skriv din tilbakemelding her"
+          ></textarea>
+          <br />
+          <input type="send-inn" value="Send inn" class="btn" />
+          <br />
+          <p>
+            Ved å sende inn tilbakemeldingen din, samtykker du i at vi kan bruke
+            den til å forbedre våre tjenester. Vi setter stor pris på din
+            tilbakemelding!
+          </p>
+          <br />
+          <label for="anbefalelse" id="yn"
+            >Vil du anbefale Craftsvilla til andre?</label
+          >
+          <input type="radio" name="anbefalelse" value="Ja" id="ja" /><label
+            for="ja"
+            >ja</label
+          >
+          <input type="radio" name="anbefalelse" value="Nei" id="nei" /><label
+            for="nei"
+            >nei</label
+          >
+        </form>
+        <br />
+      </article>
+      <article id="right">
+        <h3>Sjekk ut hva andre sier om oss</h3>
+        <div class="container">
+          <div class="tilbakemelding-img">
+            <img
+              src="./tibakemelding image/360_F_376478182_yPuPo2qi6rYcu9ilwGWR6gQ7QBBC8Isw.jpg"
+              alt="brunhåret smilende kvinne"
+              class="tilbakemelding-image"
+            />
+          </div>
+          <p>
+            "Jeg hadde en fantastisk tid på workshoppen! Instruktøren var
+            kunnskapsrik og vennlig, og var kjekt å se ungene utforske nye
+            ferdigheter innen kunst. Jeg kan ikke vente med å delta på flere!"
+          </p>
+        </div>
+        <br />
+        <div class="container">
+          <div>
+            <img
+              src="./tibakemelding image/https___cdn-images-1.medium.com_max_2000_1_Y6l_FDhxOI1AhjL56dHh8g.jpeg"
+              alt="blond smilende mann"
+              class="tilbakemelding-image"
+            />
+          </div>
+          <p>
+            "Workshoppen var en flott opplevelse! Jeg elsket å lære nye
+            teknikker og møte likesinnede mennesker. Det var inspirerende og
+            morsomt!"
+          </p>
+        </div>
+        <br />
+        <div class="container">
+          <div>
+            <img
+              src="./tibakemelding image/person-of-colour-autism-900x500.avif"
+              alt="smilende kvinne av farge"
+              class="tilbakemelding-image"
+            />
+          </div>
+          <p>
+            "Jeg hadde en herlig opplevelse! Var morsomt å treffe nye mennesker
+            og lære nye ferdigheter. Jeg følte meg inspirert og motivert til å
+            følge drømmen min om å bli kunstner!"
+          </p>
+        </div>
+      </article>
+    </section>
+    <footer class="footer">
       <p>Contact us support@craftvilla.com</p>
+      <a href="facebook" class="icon"><i class="fa-brands fa-facebook"></i></a>
+      <a href="twitter" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="instagram" class="icon"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
     </footer>
   </body>
 </html>
